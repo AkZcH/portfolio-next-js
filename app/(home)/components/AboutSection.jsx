@@ -95,10 +95,10 @@ const AboutSection = () => {
               {/* Hero Quote */}
               <div className="space-y-2">
                 <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
-                  "I didn't inherit skill —
+                  &ldquo;I didn&apos;t inherit skill —
                 </h2>
                 <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
-                  I engineered it."
+                  I engineered it.&rdquo;
                 </h2>
               </div>
 
@@ -109,7 +109,7 @@ const AboutSection = () => {
               <div className="space-y-6 text-zinc-400 leading-relaxed">
                 <p>
                   I consider myself a self-engineered systems thinker.
-                  I don't learn for grades or certificates — I learn to understand how real systems break and how to rebuild them better.
+                  I don&apos;t learn for grades or certificates — I learn to understand how real systems break and how to rebuild them better.
                 </p>
                 <p>
                   My work sits at the intersection of backend engineering, cloud infrastructure, and intelligent systems.
@@ -117,7 +117,7 @@ const AboutSection = () => {
                 </p>
                 <p>
                   I build because clarity compounds.
-                  And systems don't forgive shallow thinking.
+                  And systems don&apos;t forgive shallow thinking.
                 </p>
               </div>
 
