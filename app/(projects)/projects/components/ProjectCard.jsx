@@ -3,6 +3,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import { FaExternalLinkAlt } from 'react-icons/fa';
+import Image from 'next/image';
 import { itemAnimation } from './Animations';
 
 export const ProjectCard = ({ project, index }) => (
@@ -12,11 +13,11 @@ export const ProjectCard = ({ project, index }) => (
     >
         <div className="sm:w-1/3">
             <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
-                <img
+                <Image
                     src={project.image}
                     alt={project.title}
-                    loading="lazy"
-                    className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-300"
+                    fill
+                    className="object-cover transform group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300" />
             </div>

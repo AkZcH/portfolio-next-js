@@ -66,7 +66,7 @@ const ExplorationSection = () => {
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Exploring the frontiers of cryptography and security, pushing the boundaries 
-            of what's possible in quantum-resistant systems.
+            of what&apos;s possible in quantum-resistant systems.
           </p>
         </motion.div>
 
