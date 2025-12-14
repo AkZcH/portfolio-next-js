@@ -15,13 +15,13 @@ const geistSans = localFont({
 });
 
 export const metadata = {
-  title: "Huzaif\'s Portfolio",
+  title: "AkZcH - Cryptography & AI Researcher",
   icons:{
-icon: "/logo.png"
+    icon: "/logo.png"
   },
-  description: "Experienced fullstack developer specializing in modern web technologies. View my projects, skills, and experience.",
-  keywords: "fullstack developer,backend developer, frontend developer, web development, JavaScript,JS, C#, CSharp, React, Node.js, portfolio",
-  author: "Huzaif Ahmed",
+  description: "Independent security researcher specializing in post-quantum cryptography, secure protocols, and systems security. Expert in Rust, lattice-based cryptography, and zero-knowledge proofs.",
+  keywords: "cryptography, security researcher, post-quantum cryptography, Rust, lattice cryptography, zero-knowledge proofs, BLAKE3, security protocols, systems programming, portfolio",
+  author: "AkZcH",
   robots: "index, follow",
 };
 

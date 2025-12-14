@@ -44,8 +44,8 @@ const ContactPage = () => {
                         Get In Touch
                     </h2>
                     <p className="text-muted-foreground max-w-xl mx-auto text-sm sm:text-base px-4">
-                        Have a project in mind? Looking to collaborate? Drop me a message,
-                        and let's create something amazing together.
+                        Interested in cryptography research collaboration? Have questions about post-quantum security? 
+                        Let's discuss secure systems and cutting-edge cryptographic solutions.
                     </p>
                 </motion.div>
 

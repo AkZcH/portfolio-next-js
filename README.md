@@ -1,8 +1,8 @@
 ![Thumbnail ](images/Thumbnail.png)
 
-# Huzaif Ahmed - Portfolio Website
+# AkZcH - Cryptography & AI Research Portfolio
 
-A modern and responsive portfolio website to showcase my projects, skills, and experiences. Built with Next.js and styled using Tailwind CSS, this portfolio provides a seamless user experience with smooth animations and an organized layout.
+A modern and responsive portfolio website showcasing cutting-edge cryptography research, security systems, and post-quantum cryptographic implementations. Built with Next.js and styled using Tailwind CSS, this portfolio highlights research papers, security projects, and technical achievements in the field of cryptographic security.
 
 ## Features
 
@@ -15,7 +15,10 @@ A modern and responsive portfolio website to showcase my projects, skills, and e
 - **Next.js**: React framework for building static and dynamic websites.
 - **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
 - **Framer Motion**: Animation library for React to create smooth transitions and effects.
-- **GitHub API**: Fetches the latest GitHub projects dynamically.
+- **Research Showcase**: Displays cryptographic research papers and findings.
+- **Security Focus**: Highlights post-quantum cryptography and secure protocols.
+- **Performance Metrics**: Quantifiable results from security implementations.
+- **GitHub Integration**: Showcases open-source security contributions.
 
 ## Getting Started
 
@@ -29,7 +32,7 @@ A modern and responsive portfolio website to showcase my projects, skills, and e
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/huzaifahmedz/portfolio-website.git
+   git clone https://github.com/AkZcH/portfolio-website.git
    ```
 
 2. Navigate into the project directory:

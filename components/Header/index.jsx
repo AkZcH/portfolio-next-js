@@ -69,13 +69,13 @@ const Logo = ({ isMobile = false }) => (
                 />
             </motion.div>
             <motion.span
-                className={`text-gray-300 font-semibold ${isMobile ? 'hidden' : 'text-base sm:text-lg'}`}
+                className={`text-gray-300 font-semibold ${isMobile ? 'text-sm' : 'text-base sm:text-lg'}`}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.2 }}
             >
-                <span className="hidden sm:inline">{config.developer.name} | Devxora</span>
-                {/* <span className="sm:hidden">{config.developer.name}</span> */}
+                <span className="hidden sm:inline">{config.developer.name} | Backend Systems</span>
+                <span className="sm:hidden">{config.developer.name}</span>
             </motion.span>
         </Link>
     </motion.div>
@@ -110,10 +110,10 @@ const ContactButton = ({ isMobile = false, onLinkClick }) => (
         transition={{ delay: isMobile ? 0.5 : 0.4, duration: 0.5 }}
         onClick={onLinkClick}
     >
-        <Link href={"https://github.com/huzaifahmedz/Huzaif-Ahmed-portfolio-fourth"} target='_blank' className={isMobile ? 'w-full' : ''}>
+        <Link href={"https://github.com/AkZcH"} target='_blank' className={isMobile ? 'w-full' : ''}>
             <Button className={`${isMobile ? 'w-full' : ''} rounded-2xl font-semibold bg-white text-gray-900 hover:bg-gray-200 text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3`}>
-                <span className="hidden sm:inline">Repo Inside!</span>
-                <span className="sm:hidden">Template</span>
+                <span className="hidden sm:inline">GitHub Profile</span>
+                <span className="sm:hidden">GitHub</span>
             </Button>
         </Link>
     </motion.div>
@@ -138,7 +138,7 @@ const Header = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
             >
-                <div className="container mx-auto flex items-center justify-between md:px-64 px-4 sm:px-6">
+                <div className="w-full flex items-center justify-between px-4 md:px-64 md:max-w-none md:mx-auto">
                     <Logo />
                     <Navigation />
                     <div className="hidden md:block">

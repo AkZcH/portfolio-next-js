@@ -4,6 +4,12 @@ import HeroSection from './components/HeroSection'
 import GithubProjects from './components/GithubProjects'
 import SkillsSection from './components/Skills'
 import ExperienceSection from './components/Experience'
+import ResearchSection from './components/ResearchSection'
+// import ExplorationSection from './components/ExplorationSection'
+// import MetricsSection from './components/MetricsSection'
+import AboutSection from './components/AboutSection'
+import CoreSignalsSection from './components/CoreSignalsSection'
+import ProjectsSection from './components/ProjectsSection'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { HiArrowRight } from 'react-icons/hi'
@@ -12,6 +18,12 @@ const Home = () => {
   return (
     <div>
       <HeroSection />
+      <AboutSection />
+      <CoreSignalsSection />
+      <ProjectsSection />
+      <ResearchSection />
+      {/* <ExplorationSection /> */}
+      {/* <MetricsSection /> */}
       <ExperienceSection />
       <GithubProjects />
       <SkillsSection />

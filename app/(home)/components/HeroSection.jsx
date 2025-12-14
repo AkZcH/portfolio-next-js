@@ -56,38 +56,41 @@ const HeroSection = () => {
           animate="show"
           className="max-w-3xl mx-auto text-center space-y-8 relative"
         >
-          <motion.div
+          {/* <motion.div
             variants={itemAnimation}
             className="inline-flex items-center space-x-2 bg-secondary/10 border-[1.8px] border-zinc-900/70 px-4 py-2 rounded-full text-primary backdrop-blur-sm"
           >
             <HiCode className="w-5 h-5" />
-            <span className="text-sm font-medium">Welcome to my portfolio</span>
-          </motion.div>
+            <span className="text-sm font-medium">v1.0.0 • Updated November 2025</span>
+          </motion.div> */}
 
           <div className="space-y-4">
             <motion.h1
               variants={itemAnimation}
-              className="text-4xl md:text-7xl font-bold tracking-tight"
+              className="text-3xl md:text-4xl lg:text-7xl font-bold tracking-tight text-center"
             >
               <motion.span
                 variants={textAnimation}
-                className="block text-primary mb-2"
+                className="block text-white mb-2"
               >
-                Hi, I'm {config.developer.name}
+                AKSHAT CHAUHAN
               </motion.span>
               <motion.span
                 variants={textAnimation}
-                className="block text-white/60 text-2xl md:text-4xl"
+                className="block text-primary text-lg md:text-2xl"
               >
-I build web that builds brands.              </motion.span>
+                Backend & Systems Engineer
+              </motion.span>
             </motion.h1>
           </div>
 
+
+          
           <motion.p
             variants={itemAnimation}
-            className="text-base sm:text-md text-muted-foreground leading-relaxed max-w-2xl mx-auto"
+            className="text-base sm:text-md text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-8"
           >
-           Full-stack builder creating digital experiences that respect humans and scale with clarity. Accessibility is my north star.
+            I build backend systems and cloud-native architectures with a strong focus on scalability, reliability, and security-aware design.
           </motion.p>
 
           <motion.div
@@ -99,9 +102,17 @@ I build web that builds brands.              </motion.span>
                 variant="expandIcon"
                 Icon={HiArrowRight}
                 iconPlacement="right"
-                className="rounded-full px-6 py-6 text-base transition-all duration-300 hover:scale-105 font-semibold"
+                className="rounded-full px-6 py-6 text-base transition-all duration-300 hover:scale-105 font-semibold bg-white text-black hover:bg-gray-200"
               >
-                View Projects
+                View My Work
+              </Button>
+            </Link>
+            <Link href={"/contact"}>
+              <Button
+                variant="outline"
+                className="rounded-full px-6 py-6 text-base transition-all duration-300 hover:scale-105 font-semibold border-white/20 text-white hover:bg-white/10"
+              >
+                View Resume
               </Button>
             </Link>
           </motion.div>

@@ -1,0 +1,299 @@
+{
+  "personal_information": {
+    "name": "Akshat Chauhan",
+    "title": "AI Engineer, Systems, Cryptography, and Full-Stack Development",
+    "professional_identity": "Rust-Focused Systems & Security Engineer",
+    "email": "contact@akshatchauhan.dev",
+    "resume_filename": "AkshatChauhanResume.pdf",
+    "last_updated": "November 2025",
+    "version": "v1.0.0"
+  },
+  "social_links": {
+    "github": "https://github.com/AkZcH",
+    "linkedin": "https://www.linkedin.com/in/akshat-chauhan-ai/",
+    "twitter": "https://twitter.com",
+    "email": "mailto:contact@akshatchauhan.dev"
+  },
+  "professional_summary": {
+    "description": "I'm a full-stack and systems developer with a deep interest in how software, networks, and infrastructure interact. My work bridges web development, system design, and network engineering, with a particular focus on cryptography and building secure, resilient systems.",
+    "philosophy": "Technology should empower individuals, automate the mundane, and unlock new possibilities through intelligence and decentralization.",
+    "value_proposition": "Building intelligent, secure, and scalable systems at the intersection of full-stack development & systems engineering.",
+    "specializations": [
+      "Full-Stack Development",
+      "Systems & Network Engineering", 
+      "Crypto Research",
+      "Distributed Systems",
+      "Network Architecture"
+    ]
+  },
+  "experience": [
+    {
+      "role": "AI Engineer",
+      "company": "GeeksforGeeks KIIT",
+      "duration": "Feb 2025 – Present",
+      "description": "Contributing to applied AI research in computer vision and NLP. Mentoring junior researchers and delivering seminars to enhance lab collaboration and technical literacy.",
+      "technologies": ["Python", "PyTorch", "OpenCV", "Flask", "Jetson Nano"],
+      "projects": [
+        {
+          "name": "YT Video Summarizer",
+          "details": [
+            "Developed a CNN-LSTM model for lip reading from silent video frames using the GRID corpus dataset.",
+            "Achieved ~96% word-level accuracy with OpenCV-SciSec facial landmark detection and TensorFlow sequence modeling.",
+            "Deployed real-time demo via Flask backend with GPU acceleration, optimized for Jetson Nano."
+          ]
+        },
+        {
+          "name": "Deep Research Agent",
+          "details": [
+            "Engineered an image-to-LaTeX translator using CNN + Seq2Seq Attention achieving 92% symbol accuracy.",
+            "Applied TensorRT for GPU inference acceleration, reducing latency by ~35%.",
+            "Optimized model for low-compute edge devices."
+          ]
+        }
+      ]
+    },
+    {
+      "role": "AI Engineer",
+      "company": "IoT Lab, KIIT",
+      "duration": "Jan 2025 – Present",
+      "description": "Contributing to applied AI research in computer vision and NLP. Mentoring junior researchers and delivering seminars to enhance lab collaboration and technical literacy.",
+      "technologies": ["Python", "TensorFlow", "PyTorch", "OpenCV", "Flask", "Jetson Nano"],
+      "projects": [
+        {
+          "name": "LipRead",
+          "details": [
+            "Developed a CNN-LSTM model for lip reading from silent video frames using the GRID corpus dataset.",
+            "Achieved ~96% word-level accuracy with OpenCV-SciSec landmark detection + TensorFlow sequence modeling.",
+            "Deployed real-time demo via Flask backend with GPU acceleration, optimized for Jetson Nano."
+          ]
+        },
+        {
+          "name": "News Classifier",
+          "details": [
+            "Built a BERT-based multi-label news classifier for 10+ categories using 100k+ scraped articles.",
+            "Enhanced precision by ~15% via active learning and data augmentation.",
+            "Integrated LIME explainability and built a Flask + React dashboard for live analytics."
+          ]
+        },
+        {
+          "name": "Handwritten Equation Solver",
+          "details": [
+            "Built an image-to-LaTeX translator using CNN + Seq2Seq Attention with 92% accuracy.",
+            "Applied TensorRT for GPU acceleration, reducing latency by ~35%.",
+            "Optimized inference for low-compute edge devices."
+          ]
+        }
+      ]
+    },
+    {
+      "role": "Web Development Lead",
+      "company": "AISOC",
+      "duration": "Sep 2024 – Present",
+      "description": "Overhauled the organization's website to enhance performance, accessibility, and visual appeal. Organized events, conducted hackathons, and served as a panel judge while leading engineering across the community.",
+      "technologies": ["Next.js", "Tailwind CSS", "Sanity.io", "Vercel", "Node.js", "MongoDB"],
+      "projects": [
+        {
+          "name": "Chronos v2.0",
+          "details": [
+            "Designed and deployed a full-stack hackathon platform (React + Node.js + MongoDB).",
+            "Handled 250+ registrations and 500+ project submissions.",
+            "Added automated evaluation APIs + async queueing reducing processing time by ~40%.",
+            "Co-organized the university-wide AI Hackathon and evaluated 20+ projects."
+          ]
+        },
+        {
+          "name": "AISOC Website",
+          "details": [
+            "Led full redesign using Next.js + Tailwind, improving load times by ~55%.",
+            "Implemented CMS backend via Sanity.io for dynamic publishing.",
+            "Deployed on Vercel with Cloudflare caching + analytics integration.",
+            "Conducted workshops on web dev, Git workflows, and CI/CD."
+          ]
+        }
+      ]
+    }
+  ],
+  "featured_projects": [
+    {
+      "title": "EchoTrap: Self-Rebuilding TCP Honeypot",
+      "purpose": "Built to study and defend against automated port scanning attacks in real-world network environments.",
+      "description": "A Rust-based intelligent TCP honeypot that detects port scanning attacks and dynamically migrates its listening port in real time while logging detailed metrics.",
+      "metrics": ["Detects attacks in <50ms", "Handles 10k+ concurrent connections"],
+      "technologies": ["Rust", "tokio", "tracing", "serde", "Networking", "Security", "Docker"],
+      "github": "https://github.com/AkZcH/EchoTrap"
+    },
+    {
+      "title": "QuantumLock: Post-Quantum Cryptographic Engine",
+      "purpose": "Preparing for the quantum computing era by implementing quantum-resistant encryption algorithms.",
+      "description": "A Rust-based post-quantum encryption engine designed to protect data using lattice-based and quantum-resistant cryptographic algorithms.",
+      "metrics": ["NIST-approved algorithms", "2048-bit key strength equivalent"],
+      "technologies": ["Rust", "ring", "pqcrypto", "serde", "Cryptography", "Security", "Docker"],
+      "github": "https://github.com/AkZcH/QuantumLock"
+    },
+    {
+      "title": "HuffSpace: File Compression Tool",
+      "purpose": "Optimizing storage efficiency for large-scale data processing pipelines and archival systems.",
+      "description": "A Rust-based tool that uses Huffman Coding to compress and decompress files efficiently with lossless recovery and real-time performance insights.",
+      "metrics": ["40-60% compression ratio", "Multi-threaded processing"],
+      "technologies": ["Rust", "rayon", "clap", "serde", "Compression", "Systems", "Docker"],
+      "github": "https://github.com/AkZcH/HuffSpace"
+    }
+  ],
+  "research_papers": [
+    {
+      "title": "EchoTrap: Cryptographic Hardening Study",
+      "category": "Secure Networking",
+      "date": "Nov 2025",
+      "problem": "TCP honeypots are highly vulnerable to timing-based fingerprinting and known-pattern exploits.",
+      "solution": "Implemented cryptographic event logging and timing-obfuscation layers using Rust's async runtime.",
+      "findings": [
+        "Reduced timing-based classifier accuracy by 38%",
+        "Successfully captured adversarial patterns across 2M+ logged events",
+        "Provided secure log-integrity using incremental hashing"
+      ],
+      "impact": "Enables safer honeypot deployments and deeper adversarial intelligence collection.",
+      "tags": ["Security", "Rust", "TCP", "Honeypots"]
+    },
+    {
+      "title": "BLAKE3 vs SHA-256 Performance Analysis",
+      "category": "Hashing",
+      "date": "Oct 2025",
+      "problem": "Hash function performance varies dramatically across CPU architectures, creating unpredictable latency in distributed systems.",
+      "solution": "Developed a Rust-based benchmarking suite testing multithreading, memory usage, and warm-up behaviors.",
+      "findings": [
+        "BLAKE3 achieved ~1200 MB/s throughput on 8-core systems",
+        "SHA-256 degraded up to 40% under thread contention",
+        "SHA-3 demonstrated stable memory usage but slow initial warm-up"
+      ],
+      "impact": "Helps engineers choose optimal hashing algorithms for backend pipelines and distributed storage systems.",
+      "tags": ["Hashing", "BLAKE3", "SHA-256", "Benchmarks"]
+    },
+    {
+      "title": "Zero-Knowledge Proof Implementation",
+      "category": "Zero Knowledge",
+      "date": "Sep 2025",
+      "problem": "Most zk-SNARK examples lack practical constraints or real-world performance considerations.",
+      "solution": "Implemented zk-SNARKs from scratch in Rust with a focus on prover efficiency and constraint system optimization.",
+      "findings": [
+        "Prover performance improved 32% with multi-threaded batching",
+        "Constraint reduction reduced proving time by 18%",
+        "Achieved stable verification under low-power devices"
+      ],
+      "impact": "Enables more practical privacy-preserving authentication systems and off-chain proof computation.",
+      "tags": ["ZK", "SNARKs", "Rust", "Cryptography"]
+    },
+    {
+      "title": "Distributed Key Exchange Protocol",
+      "category": "Key Exchange",
+      "date": "Aug 2025",
+      "problem": "Traditional key exchange mechanisms struggle in distributed, peer-to-peer environments with untrusted nodes.",
+      "solution": "Designed a hybrid cryptographic protocol combining classical + PQ primitives with secure multi-party coordination.",
+      "findings": [
+        "Achieved stable key agreement across unreliable networks",
+        "Hybrid encryption reduced compromise probability significantly",
+        "Provided forward secrecy while maintaining lightweight performance"
+      ],
+      "impact": "Useful for secure P2P messaging systems, decentralized networks, and distributed consensus protocols.",
+      "tags": ["Key Exchange", "Distributed Systems", "Protocol Design"]
+    },
+    {
+      "title": "Argon2 Memory-Hard Analysis",
+      "category": "Encryption",
+      "date": "Jul 2025",
+      "problem": "Password hashing schemes are often improperly configured, making them vulnerable to hardware-accelerated brute force.",
+      "solution": "Implemented Argon2 in Rust and analyzed its memory-hardness, timing profile, and GPU attack resistance.",
+      "findings": [
+        "Detected optimal configurations for preventing GPU-parallelism",
+        "Observed 1.8× slowdown on insufficient RAM systems",
+        "Measured timing consistency across CPU generations"
+      ],
+      "impact": "Helps engineers deploy safer authentication pipelines with correct Argon2 parameterization.",
+      "tags": ["Argon2", "Password Security", "Rust"]
+    }
+  ],
+  "flagship_research": {
+    "title": "QuantumLock: Lattice-Based Encryption Engine",
+    "description": "A post-quantum encryption engine built using lattice-based cryptographic primitives, designed to withstand quantum adversaries while maintaining practical performance on modern hardware.",
+    "findings": [
+      "Key generation time reduced by 27% after SIMD-based vectorization",
+      "LWE decryption stabilized under multi-threaded workloads with negligible timing variance",
+      "Performance comparable to NIST PQC finalists under constrained CPU environments"
+    ],
+    "impact": "Contributes toward future-proof encryption systems resistant to quantum attacks, suitable for secure messaging, distributed systems, and embedded cryptography.",
+    "tags": ["Rust", "PQCrypto", "Lattice", "LWE", "SIMD"]
+  },
+  "open_source_contributions": [
+    {
+      "name": "tokio-rs/tokio",
+      "description": "Performance optimizations for async runtime",
+      "url": "https://github.com/tokio-rs/tokio"
+    },
+    {
+      "name": "RustCrypto/hashes",
+      "description": "Security audit and test coverage improvements",
+      "url": "https://github.com/RustCrypto/hashes"
+    },
+    {
+      "name": "clap-rs/clap",
+      "description": "CLI argument parsing enhancements",
+      "url": "https://github.com/clap-rs/clap"
+    }
+  ],
+  "experimental_projects": [
+    {
+      "title": "SHA-3 From Scratch",
+      "description": "Pure Rust implementation of Keccak-f permutation.",
+      "status": "Experimental"
+    },
+    {
+      "title": "LWE Key Exchange",
+      "description": "Learning-With-Errors based secure key agreement prototype.",
+      "status": "Experimental"
+    },
+    {
+      "title": "Homomorphic Encryption PoC",
+      "description": "Basic FHE operations implemented for secure computation.",
+      "status": "Experimental"
+    }
+  ],
+  "technical_skills": {
+    "programming_languages": ["Rust", "Python", "JavaScript", "TypeScript", "Go", "C"],
+    "frontend_technologies": ["React", "Next.js", "TailwindCSS", "shadcn/ui", "Framer Motion", "Radix UI"],
+    "backend_technologies": ["Node.js", "Express", "FastAPI", "Flask"],
+    "databases": ["PostgreSQL", "MongoDB", "Redis", "Supabase"],
+    "ai_ml_technologies": ["PyTorch", "TensorFlow", "OpenCV", "NumPy", "Pandas", "Scikit-learn", "HuggingFace Transformers", "OpenAI API", "LangChain", "Jupyter", "CUDA"],
+    "systems_technologies": ["Docker", "Kubernetes", "AWS", "Linux", "Nginx"],
+    "cryptography_technologies": ["ring", "pqcrypto", "BLAKE3", "SHA-256", "Argon2"],
+    "networking_technologies": ["TCP", "tokio", "tracing"],
+    "development_tools": ["Git", "GitHub", "Postman", "Figma", "Vercel"]
+  },
+  "research_focus_areas": [
+    "Post-quantum encryption (Lattice, LWE, PQCrypto)",
+    "Hash function benchmarking (BLAKE3, SHA-256, SHA-3)",
+    "Secure network instrumentation & protocol hardening",
+    "Zero-knowledge proof systems and optimization",
+    "Memory-hard functions (Argon2) and timing analysis",
+    "Distributed & hybrid cryptographic key exchange"
+  ],
+  "currently_exploring": [
+    "Fully Homomorphic Encryption (FHE) PoC",
+    "GPU-accelerated BLAKE3 hashing",
+    "Optimizing zk-SNARK proving systems",
+    "PQ signature schemes (Dilithium, Falcon)"
+  ],
+  "metrics_and_achievements": [
+    "15+ Systems Projects",
+    "Detects attacks in <50ms (EchoTrap)",
+    "Handles 10k+ concurrent connections (EchoTrap)",
+    "40-60% compression ratio (HuffSpace)",
+    "~96% word-level accuracy (LipRead)",
+    "~55% load time improvement (AISOC Website)",
+    "250+ registrations handled (Chronos v2.0)",
+    "500+ project submissions (Chronos v2.0)"
+  ],
+  "project_statistics": {
+    "total_projects": "15+",
+    "languages_used": ["Rust", "Python", "JavaScript", "TypeScript", "Go", "C"],
+    "domains": ["Security", "Networking", "Cryptography", "AI/ML", "Web Development", "Systems Programming"]
+  }
+}
