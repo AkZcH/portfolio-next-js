@@ -95,13 +95,19 @@ const AboutSection = () => {
               {/* Core Description */}
               <div className="space-y-6 text-zinc-400 leading-relaxed">
                 <p>
-                  I&apos;m a systems-focused engineer who enjoys working close to constraints — performance limits, security boundaries, and real-world trade-offs.
+                  I&apos;m a systems engineer interested in software that operates under pressure — where scale, failures, adversaries, and imperfect inputs are part of normal operation.
                 </p>
                 <p>
-                  I&apos;m particularly interested in backend systems where correctness and latency matter, and I&apos;ve worked with Rust, cloud infrastructure, and applied ML systems operating under production-like conditions.
+                  I build across backend services, infrastructure, cryptography, and applied ML not to be a generalist, but to understand how real systems behave end-to-end when assumptions break.
                 </p>
                 <p>
-                  I value clarity, engineering judgment, and learning through building.
+                  I care less about frameworks and more about tradeoffs: latency vs consistency, security vs usability, abstraction vs control. I assume systems will be misused before they are used correctly, and I design accordingly.
+                </p>
+                <p>
+                  Over time, my work has centered around hostile and constrained environments — secure network instrumentation, post-quantum cryptography, performance-critical systems, and ML deployed under real resource limits.
+                </p>
+                <p className="text-zinc-300 font-medium">
+                  I&apos;m most interested in problems where correctness matters, failure is expensive, and &ldquo;it works locally&rdquo; is not an acceptable outcome.
                 </p>
               </div>
 

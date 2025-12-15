@@ -10,8 +10,8 @@ const researchPapers = [
     title: "EchoTrap: Cryptographic Hardening Study",
     category: "Secure Networking",
     date: "Nov 2025",
-    problem: "TCP honeypots are highly vulnerable to timing-based fingerprinting and known-pattern exploits.",
-    solution: "Implemented cryptographic event logging and timing-obfuscation layers using Rust's async runtime.",
+    problem: "Monitoring systems face tradeoffs between detection capability and operational security under adversarial conditions.",
+    solution: "Designed system architecture where timing constraints, logging integrity, and attack resistance shaped core implementation decisions.",
     findings: [
       "Scale: 2M+ adversarial TCP events captured across 10k concurrent connections",
       "Constraint: Detection + response under 50ms to avoid fingerprinting",
@@ -25,8 +25,8 @@ const researchPapers = [
     title: "BLAKE3 vs SHA-256 Performance Analysis",
     category: "Hashing",
     date: "Oct 2025",
-    problem: "Hash function performance varies dramatically across CPU architectures, creating unpredictable latency in distributed systems.",
-    solution: "Developed a Rust-based benchmarking suite testing multithreading, memory usage, and warm-up behaviors.",
+    problem: "Distributed systems require hash function choices that balance performance predictability with resource constraints across heterogeneous infrastructure.",
+    solution: "Built evaluation framework modeling how algorithmic choices impact system behavior under contention and varying hardware constraints.",
     findings: [
       "Scale: Benchmarked hashing throughput on 8-core CPU across 10GB datasets",
       "Constraint: High thread contention under shared memory workloads",
@@ -40,8 +40,8 @@ const researchPapers = [
     title: "Zero-Knowledge Proof Implementation",
     category: "Zero Knowledge",
     date: "Sep 2025",
-    problem: "Most zk-SNARK examples lack practical constraints or real-world performance considerations.",
-    solution: "Implemented zk-SNARKs from scratch in Rust with a focus on prover efficiency and constraint system optimization.",
+    problem: "Privacy-preserving systems require cryptographic components that balance security guarantees with operational feasibility.",
+    solution: "Designed proof system architecture where constraint complexity, proving time, and verification requirements directly influenced system design.",
     findings: [
       "Scale: Generated and verified proofs across variable constraint counts (measured locally)",
       "Constraint: Prover time dominated by constraint count, not cryptographic ops",
@@ -55,7 +55,7 @@ const researchPapers = [
 
 const flagshipResearch = {
   title: "QuantumLock: Lattice-Based Encryption Engine",
-  description: "A post-quantum encryption engine exploring lattice-based cryptographic primitives, evaluating performance tradeoffs and implementation constraints on modern hardware.",
+  description: "Cryptographic infrastructure designed for environments where algorithm choice, performance characteristics, and operational constraints directly determine system viability and security posture.",
   findings: [
     "Scale: Benchmarked keygen + decrypt under 1M+ operations on 8-core CPU",
     "Constraint: <50ms latency target under CPU-only, no AVX-512",
@@ -82,11 +82,10 @@ const ResearchSection = () => {
             <span className="text-sm font-medium">Systems Engineering</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Secure Backend & Distributed Systems
+            Questions I&apos;m actively exploring
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Building secure, high-performance backend systems with cryptographic components, 
-            focusing on integration challenges and production constraints.
+            I&apos;m interested in problems that don&apos;t have clean abstractions yet — where performance, security, and correctness pull in opposite directions.
           </p>
         </motion.div>
 

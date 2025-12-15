@@ -91,11 +91,10 @@ const ProjectsSection = () => {
             <span className="text-sm font-medium">Featured Projects</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Backend & Systems Projects
+            Systems built under constraints
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            A collection of projects showcasing expertise in systems programming, 
-            AI/ML, and full-stack development with measurable impact.
+            These are not demos. Each project forced explicit tradeoffs between performance, security, correctness, and operational complexity.
           </p>
         </motion.div>
 

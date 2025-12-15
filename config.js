@@ -1,5 +1,22 @@
 import { FaDiscord, FaGithub, FaMapPin } from "react-icons/fa";
 import { HiCode, HiCube, HiDatabase, HiMail, HiBriefcase, HiShieldCheck, HiLockClosed } from "react-icons/hi";
+import {
+    SiRust,
+    SiC,
+    SiGo,
+    SiPython,
+    SiJavascript,
+    SiDocker,
+    SiKubernetes,
+    SiAmazon,
+    SiLinux,
+    SiGit,
+    SiReact,
+    SiNextdotjs,
+    SiPytorch,
+    SiTensorflow,
+    SiOpencv
+} from "react-icons/si";
 
 export const config = {
     developer: {
@@ -20,7 +37,7 @@ export const config = {
         {
             id: 1,
             title: "EchoTrap: TCP Honeypot",
-            description: "A cryptographically hardened TCP honeypot designed to capture adversarial patterns while resisting timing-based fingerprinting. Features secure event logging and timing-obfuscation layers using Rust's async runtime.",
+            description: "Designed a secure monitoring system where authentication, state management, and infrastructure choices directly impacted reliability and attack surface. Modeled system behavior assuming adversarial environments and timing-based attacks.",
             image: "/projects/project-1.webp",
             technologies: ["Rust", "tokio", "tracing", "TCP", "Cryptography", "Security", "Docker"],
             github: "https://github.com/AkZcH/EchoTrap",
@@ -35,7 +52,7 @@ export const config = {
         {
             id: 2,
             title: "QuantumLock: Post-Quantum Encryption",
-            description: "A post-quantum encryption engine designed to protect data using lattice-based and quantum-resistant cryptographic algorithms. Built with NIST-approved algorithms and optimized for modern hardware.",
+            description: "Built cryptographic infrastructure balancing security guarantees with operational constraints. Designed for environments where performance, memory usage, and algorithm choice directly impact system viability.",
             image: "/projects/project-2.webp",
             technologies: ["Rust", "ring", "pqcrypto", "serde", "Cryptography", "Security", "Docker"],
             github: "https://github.com/AkZcH/QuantumLock",
@@ -50,7 +67,7 @@ export const config = {
         {
             id: 3,
             title: "HuffSpace: File Compression Tool",
-            description: "A Rust-based tool that uses Huffman Coding to compress and decompress files efficiently with lossless recovery and real-time performance insights. Optimized for large-scale data processing pipelines.",
+            description: "Engineered compression system for high-throughput environments where memory constraints, processing latency, and data integrity requirements shaped core architectural decisions.",
             image: "/projects/project-3.webp",
             technologies: ["Rust", "rayon", "clap", "serde", "Compression", "Systems", "Docker"],
             github: "https://github.com/AkZcH/HuffSpace",
@@ -65,7 +82,7 @@ export const config = {
         {
             id: 4,
             title: "LipRead: AI Lip Reading System",
-            description: "An advanced AI system for lip reading using computer vision and deep learning. Features real-time video processing, multi-language support, and high accuracy word-level recognition.",
+            description: "Built real-time inference system where model accuracy, processing latency, and resource constraints required careful tradeoffs between performance and operational complexity.",
             image: "/projects/project-4.webp",
             technologies: ["Python", "PyTorch", "OpenCV", "TensorFlow", "Computer Vision", "AI/ML"],
             github: "https://github.com/AkZcH/LipRead",
@@ -90,106 +107,106 @@ export const config = {
     ],
     skills: [
         {
-            title: "Systems Programming",
+            title: "Systems & Low-Level Programming",
             icon: <HiCode />,
-            description: "Low-level & Performance",
+            description: "Performance, memory, concurrency",
             bgClass: "bg-orange-500/10",
             iconClass: "text-orange-500",
             skills: [
-                { name: "Rust", level: "Expert", hot: true },
-                { name: "C", level: "Advanced" },
-                { name: "Go", level: "Advanced" },
-                { name: "Python", level: "Advanced" },
-                { name: "JavaScript", level: "Intermediate" }
+                { name: "Go", icon: <SiGo />, note: "Low-level systems" },
+                { name: "Rust", icon: <SiRust /> },
+                { name: "C", icon: <SiC /> },
+                { name: "Python", icon: <SiPython /> },
+                { name: "JavaScript", icon: <SiJavascript /> }
             ]
         },
         {
             title: "Cryptography & Security",
             icon: <HiShieldCheck />,
-            description: "Post-Quantum & Protocols",
+            description: "Protocols & applied crypto",
             bgClass: "bg-red-500/10",
             iconClass: "text-red-500",
             skills: [
-                { name: "Post-Quantum Crypto", level: "Expert", hot: true },
-                { name: "Lattice Cryptography", level: "Advanced", hot: true },
-                { name: "BLAKE3 & SHA-256", level: "Advanced" },
-                { name: "Zero-Knowledge Proofs", level: "Advanced" },
-                { name: "Argon2 & Password Security", level: "Advanced" }
+                { name: "Post-Quantum Cryptography" },
+                { name: "Lattice Cryptography" },
+                { name: "Zero-Knowledge Proofs" },
+                { name: "BLAKE3 / SHA-256" },
+                { name: "Argon2 & Password Security" }
             ]
         },
         {
-            title: "AI/ML & Frontend",
+            title: "AI / ML (Applied)",
             icon: <HiDatabase />,
-            description: "Machine Learning & Web",
+            description: "Engineering-focused ML",
             bgClass: "bg-blue-500/10",
             iconClass: "text-blue-500",
             skills: [
-                { name: "PyTorch", level: "Advanced" },
-                { name: "TensorFlow", level: "Advanced" },
-                { name: "React", level: "Intermediate" },
-                { name: "Next.js", level: "Intermediate" },
-                { name: "OpenCV", level: "Advanced" }
+                { name: "PyTorch", icon: <SiPytorch /> },
+                { name: "TensorFlow", icon: <SiTensorflow /> },
+                { name: "OpenCV", icon: <SiOpencv /> },
+                { name: "React", icon: <SiReact /> },
+                { name: "Next.js", icon: <SiNextdotjs /> }
             ]
         },
         {
-            title: "Infrastructure & Tools",
+            title: "Cloud, Infra & Tooling",
             icon: <HiCube />,
-            description: "DevOps & Development",
+            description: "Deployment & operations",
             bgClass: "bg-emerald-500/10",
             iconClass: "text-emerald-500",
             skills: [
-                { name: "Docker", level: "Advanced", hot: true },
-                { name: "Kubernetes", level: "Intermediate" },
-                { name: "AWS", level: "Intermediate" },
-                { name: "Linux", level: "Advanced" },
-                { name: "Git", level: "Expert" }
+                { name: "Docker", icon: <SiDocker /> },
+                { name: "Kubernetes", icon: <SiKubernetes /> },
+                { name: "AWS", icon: <SiAmazon /> },
+                { name: "Linux", icon: <SiLinux /> },
+                { name: "Git", icon: <SiGit /> }
             ]
         }
     ],
-    experiences: [
-        {
-            position: "AI Engineer",
-            company: "GeeksforGeeks KIIT",
-            period: "Feb 2025 – Present",
-            location: "KIIT University",
-            description: "Contributing to applied AI research in computer vision and NLP. Mentoring junior researchers and delivering seminars to enhance lab collaboration and technical literacy.",
-            responsibilities: [
-                "Developed CNN-LSTM model for lip reading achieving ~96% word-level accuracy",
-                "Engineered image-to-LaTeX translator using CNN + Seq2Seq Attention with 92% symbol accuracy",
-                "Applied TensorRT for GPU inference acceleration, reducing latency by ~35%",
-                "Deployed real-time demos via Flask backend with GPU acceleration for Jetson Nano"
-            ],
-            technologies: ["Python", "PyTorch", "OpenCV", "Flask", "Jetson Nano", "TensorRT"]
-        },
-        {
-            position: "AI Engineer",
-            company: "IoT Lab, KIIT",
-            period: "Jan 2025 – Present",
-            location: "KIIT University",
-            description: "Contributing to applied AI research in computer vision and NLP. Mentoring junior researchers and delivering seminars to enhance lab collaboration and technical literacy.",
-            responsibilities: [
-                "Built BERT-based multi-label news classifier for 10+ categories using 100k+ articles",
-                "Enhanced precision by ~15% via active learning and data augmentation",
-                "Integrated LIME explainability and built Flask + React dashboard for live analytics",
-                "Optimized inference for low-compute edge devices"
-            ],
-            technologies: ["Python", "TensorFlow", "PyTorch", "OpenCV", "Flask", "Jetson Nano", "BERT"]
-        },
-        {
-            position: "Web Development Lead",
-            company: "AISOC",
-            period: "Sep 2024 – Present",
-            location: "KIIT University",
-            description: "Overhauled the organization's website to enhance performance, accessibility, and visual appeal. Organized events, conducted hackathons, and served as a panel judge while leading engineering across the community.",
-            responsibilities: [
-                "Led full redesign using Next.js + Tailwind, improving load times by ~55%",
-                "Designed and deployed full-stack hackathon platform handling 250+ registrations",
-                "Added automated evaluation APIs + async queueing reducing processing time by ~40%",
-                "Conducted workshops on web dev, Git workflows, and CI/CD"
-            ],
-            technologies: ["Next.js", "Tailwind CSS", "Sanity.io", "Vercel", "Node.js", "MongoDB"]
-        }
-    ],
+experiences: [
+    {
+        position: "AI Engineer",
+        company: "GeeksforGeeks KIIT",
+        period: "Feb 2025 – Present",
+        location: "KIIT University",
+        description: "Operating inside applied ML systems where model accuracy, inference latency, and deployment constraints directly affected usability and system reliability.",
+        responsibilities: [
+            "Designed and iterated on a CNN–LSTM pipeline for lip-reading under real-time constraints, balancing accuracy against inference latency and GPU memory limits.",
+            "Built an image-to-LaTeX translation system where sequence length, attention complexity, and decoding strategy impacted both correctness and runtime behavior.",
+            "Optimized GPU inference paths using TensorRT, explicitly trading model flexibility for a ~35% latency reduction in production-style demos.",
+            "Integrated ML pipelines into Flask-based serving layers, accounting for partial failures, cold starts, and constrained edge hardware (Jetson Nano)."
+        ],
+        technologies: ["Python", "PyTorch", "OpenCV", "Flask", "Jetson Nano", "TensorRT"]
+    },
+    {
+        position: "AI Engineer",
+        company: "IoT Lab, KIIT",
+        period: "Jan 2025 – Present",
+        location: "KIIT University",
+        description: "Worked on applied NLP systems embedded in larger data and serving pipelines, where model behavior under noisy inputs and low-compute environments mattered more than offline metrics.",
+        responsibilities: [
+            "Developed a BERT-based multi-label classification system over 100k+ news articles, focusing on precision–recall tradeoffs across overlapping categories.",
+            "Improved real-world model robustness via active learning and targeted data augmentation, increasing precision by ~15% without increasing model size.",
+            "Integrated LIME-based explainability to expose model decisions, enabling safer downstream consumption rather than treating the model as a black box.",
+            "Optimized inference paths for edge and low-compute deployments, evaluating tradeoffs between batch size, latency, and throughput."
+        ],
+        technologies: ["Python", "TensorFlow", "PyTorch", "Flask", "BERT", "LIME"]
+    },
+    {
+        position: "Web Development Lead",
+        company: "AISOC",
+        period: "Sep 2024 – Present",
+        location: "KIIT University",
+        description: "Led and operated a production-facing web platform where frontend decisions, backend APIs, and infrastructure constraints directly impacted reliability under event-scale load.",
+        responsibilities: [
+            "Architected and led a full Next.js + Tailwind redesign with explicit focus on performance budgets, reducing load times by ~55%.",
+            "Designed and deployed a full-stack hackathon platform handling 250+ registrations, where data consistency and failure recovery mattered under peak traffic.",
+            "Implemented asynchronous evaluation workflows and queue-based processing to decouple user actions from long-running jobs, reducing processing time by ~40%.",
+            "Conducted workshops on Git workflows, CI/CD, and deployment practices, emphasizing production hygiene over local-only development."
+        ],
+        technologies: ["Next.js", "Tailwind CSS", "Node.js", "MongoDB", "Vercel", "CI/CD"]
+    }
+],
     contactInfo: [
         {
             icon: <FaGithub className="w-5 h-5" />,

@@ -79,7 +79,7 @@ const HeroSection = () => {
                 variants={textAnimation}
                 className="block text-primary text-lg md:text-2xl"
               >
-                Backend & Systems Engineer
+                I build systems that are expected to break, be attacked, and still keep working.
               </motion.span>
             </motion.h1>
           </div>
@@ -90,7 +90,7 @@ const HeroSection = () => {
             variants={itemAnimation}
             className="text-base sm:text-md text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-8"
           >
-            SWE Intern candidate focused on distributed systems, secure backends, and performance-critical infrastructure. Experience building Rust and cloud-native systems under real-world constraints.
+            Systems engineer working across backend, infrastructure, cryptography, and applied intelligence — focused on failure modes, attack surfaces, and long-term reliability. Most systems don't fail because of missing features — they fail because their assumptions were wrong.
           </motion.p>
 
           <motion.div
