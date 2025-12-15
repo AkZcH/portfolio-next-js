@@ -90,7 +90,7 @@ const HeroSection = () => {
             variants={itemAnimation}
             className="text-base sm:text-md text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-8"
           >
-            I build backend systems and cloud-native architectures with a strong focus on scalability, reliability, and security-aware design.
+            SWE Intern candidate focused on distributed systems, secure backends, and performance-critical infrastructure. Experience building Rust and cloud-native systems under real-world constraints.
           </motion.p>
 
           <motion.div

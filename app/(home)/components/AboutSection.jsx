@@ -92,32 +92,16 @@ const AboutSection = () => {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="space-y-8"
             >
-              {/* Hero Quote */}
-              <div className="space-y-2">
-                <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
-                  &ldquo;I didn&apos;t inherit skill —
-                </h2>
-                <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
-                  I engineered it.&rdquo;
-                </h2>
-              </div>
-
-              {/* Divider */}
-              <div className="h-px bg-zinc-800/50"></div>
-
               {/* Core Description */}
               <div className="space-y-6 text-zinc-400 leading-relaxed">
                 <p>
-                  I consider myself a self-engineered systems thinker.
-                  I don&apos;t learn for grades or certificates — I learn to understand how real systems break and how to rebuild them better.
+                  I&apos;m a systems-focused engineer who enjoys working close to constraints — performance limits, security boundaries, and real-world trade-offs.
                 </p>
                 <p>
-                  My work sits at the intersection of backend engineering, cloud infrastructure, and intelligent systems.
-                  I obsess over scalability, reliability, and decision-making under constraints — the same principles that govern real-world platforms, not toy projects.
+                  I&apos;m particularly interested in backend systems where correctness and latency matter, and I&apos;ve worked with Rust, cloud infrastructure, and applied ML systems operating under production-like conditions.
                 </p>
                 <p>
-                  I build because clarity compounds.
-                  And systems don&apos;t forgive shallow thinking.
+                  I value clarity, engineering judgment, and learning through building.
                 </p>
               </div>
 
