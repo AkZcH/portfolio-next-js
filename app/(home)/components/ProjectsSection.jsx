@@ -99,7 +99,7 @@ const ProjectsSection = () => {
         </motion.div>
 
         {/* Projects Grid */}
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-3 gap-6">
           {config.projects.slice(0, 6).map((project, index) => (
             <ProjectCard 
               key={project.id} 

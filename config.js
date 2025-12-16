@@ -80,20 +80,66 @@ export const config = {
             ]
         },
         {
-            id: 4,
-            title: "LipRead: AI Lip Reading System",
-            description: "Built real-time inference system where model accuracy, processing latency, and resource constraints required careful tradeoffs between performance and operational complexity.",
-            image: "/projects/project-4.webp",
-            technologies: ["Python", "PyTorch", "OpenCV", "TensorFlow", "Computer Vision", "AI/ML"],
-            github: "https://github.com/AkZcH/LipRead",
-            demo: "#",
-            metrics: [
-                "Scale: Real-time inference at ~30 FPS on consumer GPU",
-                "Constraint: Real-time inference under limited GPU memory",
-                "Decision: Optimized CNN-LSTM pipeline for frame-by-frame processing",
-                "→ Result: Achieved ~96% word-level accuracy with real-time performance"
-            ]
-        },
+    id: 4,
+    title: "EchoTrap: Cryptographic Hardening Study",
+    description: "Security-focused system study analyzing how timing behavior, logging integrity, and async runtime design affect honeypot survivability under adversarial observation.",
+    image: "/projects/project-4.webp",
+    technologies: ["Rust", "TCP", "Async Runtime", "Security", "Honeypots"],
+    github: "https://github.com/AkZcH/EchoTrap",
+    demo: "#",
+    metrics: [
+        "Scale: 2M+ adversarial TCP events across 10k concurrent connections",
+        "Constraint: Detection + response under 50ms to avoid fingerprinting",
+        "Decision: Implemented timing obfuscation at async runtime layer instead of network layer",
+        "→ Result: Reduced timing-based classifier accuracy by 38% without throughput loss"
+    ]
+},
+{
+    id: 5,
+    title: "BLAKE3 vs SHA-256 Performance Analysis",
+    description: "Comparative systems analysis evaluating hashing algorithm behavior under contention, parallel workloads, and heterogeneous infrastructure constraints.",
+    image: "/projects/project-5.webp",
+    technologies: ["Rust", "Cryptography", "Hashing", "Benchmarks", "Systems"],
+    github: "#",
+    demo: "#",
+    metrics: [
+        "Scale: Benchmarked hashing throughput on 8-core CPU across 10GB datasets",
+        "Constraint: Thread contention under shared-memory workloads",
+        "Decision: Selected BLAKE3 for tree-hash parallelism after SHA-256 degraded under contention",
+        "→ Result: BLAKE3 sustained ~1200 MB/s while SHA-256 degraded ~40%"
+    ]
+},
+{
+    id: 6,
+    title: "Zero-Knowledge Proof System Implementation",
+    description: "Designed and evaluated a practical ZKP system focusing on constraint optimization, prover latency, and verification efficiency under real-world limits.",
+    image: "/projects/project-6.webp",
+    technologies: ["Rust", "Cryptography", "ZK", "SNARKs", "Systems"],
+    github: "#",
+    demo: "#",
+    metrics: [
+        "Scale: Generated and verified proofs across variable constraint sizes",
+        "Constraint: Prover time dominated by constraint count, not cryptographic primitives",
+        "Decision: Reduced constraint system size prior to parallelizing prover execution",
+        "→ Result: Proving time reduced 18%, batching improved throughput 32%"
+    ]
+}
+
+        // {
+        //     id: 4,
+        //     title: "LipRead: AI Lip Reading System",
+        //     description: "Built real-time inference system where model accuracy, processing latency, and resource constraints required careful tradeoffs between performance and operational complexity.",
+        //     image: "/projects/project-4.webp",
+        //     technologies: ["Python", "PyTorch", "OpenCV", "TensorFlow", "Computer Vision", "AI/ML"],
+        //     github: "https://github.com/AkZcH/LipRead",
+        //     demo: "#",
+        //     metrics: [
+        //         "Scale: Real-time inference at ~30 FPS on consumer GPU",
+        //         "Constraint: Real-time inference under limited GPU memory",
+        //         "Decision: Optimized CNN-LSTM pipeline for frame-by-frame processing",
+        //         "→ Result: Achieved ~96% word-level accuracy with real-time performance"
+        //     ]
+        // },
         // {
         //     id: 5,
         //     title: "Chronos v2.0: Event Management",

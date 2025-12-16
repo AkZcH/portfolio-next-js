@@ -4,7 +4,7 @@ import HeroSection from './components/HeroSection'
 import GithubProjects from './components/GithubProjects'
 import SkillsSection from './components/Skills'
 import ExperienceSection from './components/Experience'
-import ResearchSection from './components/ResearchSection'
+// import ResearchSection from './components/ResearchSection'
 // import ExplorationSection from './components/ExplorationSection'
 // import MetricsSection from './components/MetricsSection'
 import AboutSection from './components/AboutSection'
@@ -21,7 +21,7 @@ const Home = () => {
       <AboutSection />
       <CoreSignalsSection />
       <ProjectsSection />
-      <ResearchSection />
+      {/*<ResearchSection /> */}
       {/* <ExplorationSection /> */}
       {/* <MetricsSection /> */}
       <ExperienceSection />
