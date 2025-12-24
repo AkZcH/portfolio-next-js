@@ -21,8 +21,8 @@ import {
 export const config = {
     developer: {
         name: "Akshat",
-        title: "Cryptography & AI Researcher",
-        tagline: "Building quantum-resistant systems and secure protocols"
+        title: "Backend Systems Engineer",
+        tagline: "Building scalable, fault-tolerant backend systems"
     },
     social: {
         github: "AkZcH",
@@ -38,7 +38,7 @@ export const config = {
             id: 1,
             title: "EchoTrap: TCP Honeypot",
             description: "Designed a secure monitoring system where authentication, state management, and infrastructure choices directly impacted reliability and attack surface. Modeled system behavior assuming adversarial environments and timing-based attacks.",
-            image: "/projects/project-1.webp",
+            image: "/projects/echotrap.jpg",
             technologies: ["Rust", "tokio", "tracing", "TCP", "Cryptography", "Security", "Docker"],
             github: "https://github.com/AkZcH/EchoTrap",
             demo: "#",
