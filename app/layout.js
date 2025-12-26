@@ -15,7 +15,7 @@ const geistSans = localFont({
 });
 
 export const metadata = {
-  title: "AkZcH - Cryptography & AI Researcher",
+  title: "AkZcH - Backend Systems Engineer",
   icons:{
     icon: "/logo.png"
   },

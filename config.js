@@ -152,63 +152,48 @@ export const config = {
         // }
     ],
     skills: [
-        {
-            title: "Systems & Low-Level Programming",
-            icon: <HiCode />,
-            description: "Performance, memory, concurrency",
-            bgClass: "bg-orange-500/10",
-            iconClass: "text-orange-500",
-            skills: [
-                { name: "Go", icon: <SiGo />, note: "Low-level systems" },
-                { name: "Rust", icon: <SiRust /> },
-                { name: "C", icon: <SiC /> },
-                { name: "Python", icon: <SiPython /> },
-                { name: "JavaScript", icon: <SiJavascript /> }
-            ]
-        },
-        {
-            title: "Cryptography & Security",
-            icon: <HiShieldCheck />,
-            description: "Protocols & applied crypto",
-            bgClass: "bg-red-500/10",
-            iconClass: "text-red-500",
-            skills: [
-                { name: "Post-Quantum Cryptography" },
-                { name: "Lattice Cryptography" },
-                { name: "Zero-Knowledge Proofs" },
-                { name: "BLAKE3 / SHA-256" },
-                { name: "Argon2 & Password Security" }
-            ]
-        },
-        {
-            title: "AI / ML (Applied)",
-            icon: <HiDatabase />,
-            description: "Engineering-focused ML",
-            bgClass: "bg-blue-500/10",
-            iconClass: "text-blue-500",
-            skills: [
-                { name: "PyTorch", icon: <SiPytorch /> },
-                { name: "TensorFlow", icon: <SiTensorflow /> },
-                { name: "OpenCV", icon: <SiOpencv /> },
-                { name: "React", icon: <SiReact /> },
-                { name: "Next.js", icon: <SiNextdotjs /> }
-            ]
-        },
-        {
-            title: "Cloud, Infra & Tooling",
-            icon: <HiCube />,
-            description: "Deployment & operations",
-            bgClass: "bg-emerald-500/10",
-            iconClass: "text-emerald-500",
-            skills: [
-                { name: "Docker", icon: <SiDocker /> },
-                { name: "Kubernetes", icon: <SiKubernetes /> },
-                { name: "AWS", icon: <SiAmazon /> },
-                { name: "Linux", icon: <SiLinux /> },
-                { name: "Git", icon: <SiGit /> }
-            ]
-        }
+  {
+    title: "Systems & Low-Level Programming",
+    icon: <HiCode />,
+    description: "Performance, memory, concurrency",
+    bgClass: "bg-orange-500/10",
+    iconClass: "group-hover:text-orange-500",
+    skills: [
+      { name: "Go", icon: <SiGo /> },
+      { name: "Rust", icon: <SiRust /> },
+      { name: "C", icon: <SiC /> },
     ],
+  },
+
+  {
+    title: "Cloud, Infra & Tooling",
+    icon: <HiCube />,
+    description: "Deployment & operations",
+    bgClass: "bg-emerald-500/10",
+    iconClass: "group-hover:text-emerald-500",
+    skills: [
+      { name: "Docker", icon: <SiDocker /> },
+      { name: "Kubernetes", icon: <SiKubernetes /> },
+      { name: "AWS", icon: <SiAmazon /> },
+      { name: "Linux", icon: <SiLinux /> },
+      { name: "Git", icon: <SiGit /> },
+    ],
+  },
+
+  {
+    title: "AI / ML (Applied)",
+    icon: <HiDatabase />,
+    description: "Engineering-focused ML",
+    bgClass: "bg-blue-500/10",
+    iconClass: "group-hover:text-blue-500",
+    skills: [
+      { name: "PyTorch", icon: <SiPytorch /> },
+      { name: "OpenCV", icon: <SiOpencv /> },
+      { name: "React", icon: <SiReact /> },
+      { name: "Next.js", icon: <SiNextdotjs /> },
+    ],
+  },
+],
 experiences: [
     {
         position: "AI Engineer",
