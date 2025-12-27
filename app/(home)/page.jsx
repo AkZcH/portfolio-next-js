@@ -8,7 +8,7 @@ import ExperienceSection from './components/Experience'
 // import ExplorationSection from './components/ExplorationSection'
 // import MetricsSection from './components/MetricsSection'
 import AboutSection from './components/AboutSection'
-import CoreSignalsSection from './components/CoreSignalsSection'
+// import CoreSignalsSection from './components/CoreSignalsSection'
 import ProjectsSection from './components/ProjectsSection'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
@@ -19,7 +19,7 @@ const Home = () => {
     <div>
       <HeroSection />
       <AboutSection />
-      <CoreSignalsSection />
+      {/* <CoreSignalsSection /> */}
       <ProjectsSection />
       {/*<ResearchSection /> */}
       {/* <ExplorationSection /> */}
