@@ -189,8 +189,8 @@ export const config = {
     skills: [
       { name: "PyTorch", icon: <SiPytorch /> },
       { name: "OpenCV", icon: <SiOpencv /> },
-      { name: "React", icon: <SiReact /> },
-      { name: "Next.js", icon: <SiNextdotjs /> },
+    //   { name: "React", icon: <SiReact /> },
+    //   { name: "Next.js", icon: <SiNextdotjs /> },
     ],
   },
 ],
