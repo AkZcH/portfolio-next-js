@@ -23,65 +23,114 @@ const itemAnimation = {
   },
 };
 
-const SkillItem = ({ skill }) => (
-  <motion.div
-    variants={itemAnimation}
-    className="group flex items-center gap-3 px-4 py-3 rounded-xl
-               border border-zinc-800/60 bg-zinc-900/30
-               transition-colors"
-  >
-    {skill.icon && (
-      <span className="text-xl text-zinc-400 transition-colors duration-200 group-hover:text-current">
-        {skill.icon}
-      </span>
-    )}
-    <div className="flex flex-col">
-      <span className="text-sm font-medium text-primary">
+// Brand color mapping for hover effects
+const getBrandColor = (skillName) => {
+  const colorMap = {
+    "Go": "#00ADD8",           // Cyan
+    "Rust": "#CE4127",         // Orange-red
+    "C": "#A8B9CC",            // Muted blue-gray
+    "Docker": "#2496ED",       // Blue
+    "Kubernetes": "#326CE5",   // Blue
+    "AWS": "#FF9900",          // Orange
+    "Linux": "#FCC624",        // Yellow accent
+    "Git": "#F05032",          // Orange-red
+    "PyTorch": "#EE4C2C",      // Orange-red
+    "OpenCV": "#5C3EE8",       // Purple-blue
+  };
+  return colorMap[skillName] || null;
+};
+
+const SkillItem = ({ skill }) => {
+  const brandColor = getBrandColor(skill.name);
+  const hasBrandColor = brandColor !== null;
+
+  return (
+    <motion.div
+      variants={itemAnimation}
+      className="group relative flex flex-col items-center justify-center gap-2 cursor-pointer"
+    >
+      {/* Icon */}
+      {skill.icon && (
+        <span
+          className="text-5xl transition-all duration-300 ease-out"
+          style={{
+            color: hasBrandColor ? brandColor : '#71717a',
+            opacity: hasBrandColor ? 0.5 : 1,
+            transform: 'scale(1)',
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.transform = 'scale(1.3)';
+            if (hasBrandColor) {
+              e.currentTarget.style.opacity = '1';
+            } else {
+              e.currentTarget.style.color = '#a1a1aa';
+            }
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.transform = 'scale(1)';
+            if (hasBrandColor) {
+              e.currentTarget.style.opacity = '0.5';
+            } else {
+              e.currentTarget.style.color = '#71717a';
+            }
+          }}
+        >
+          {skill.icon}
+        </span>
+      )}
+      
+      {/* Tool name */}
+      <span className="text-xs font-medium text-zinc-400 text-center leading-tight group-hover:text-white transition-colors duration-300">
         {skill.name}
       </span>
+      
       {skill.note && (
-        <span className="text-xs text-muted-foreground">
+        <span className="text-xs text-zinc-600 text-center">
           {skill.note}
         </span>
       )}
-    </div>
-  </motion.div>
-);
+    </motion.div>
+  );
+};
 
 const CategorySection = ({ category }) => (
   <div className="space-y-6">
-    <div className="flex items-center gap-4">
-      {/* Square icon card */}
-      <div
-        className={cn(
-          "group w-12 h-12 flex items-center justify-center rounded-xl",
-          category.bgClass
-        )}
-      >
+    <div className="w-[80%] mx-auto">
+      <div className="flex items-center gap-4">
+        {/* Square icon card */}
         <div
           className={cn(
-            "w-5 h-5 text-zinc-400 transition-colors duration-200",
-            category.iconClass
+            "group w-12 h-12 flex items-center justify-center rounded-xl",
+            category.bgClass
           )}
         >
-          {category.icon}
+          <div
+            className={cn(
+              "w-5 h-5 text-zinc-400 transition-colors duration-200",
+              category.iconClass
+            )}
+          >
+            {category.icon}
+          </div>
         </div>
-      </div>
 
-      <div>
-        <h3 className="text-xl font-semibold text-primary">
-          {category.title}
-        </h3>
-        <p className="text-sm text-muted-foreground">
-          {category.description}
-        </p>
+        <div>
+          <h3 className="text-xl font-semibold text-primary">
+            {category.title}
+          </h3>
+          <p className="text-sm text-muted-foreground">
+            {category.description}
+          </p>
+        </div>
       </div>
     </div>
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-      {category.skills.map((skill, idx) => (
-        <SkillItem key={idx} skill={skill} />
-      ))}
+    <div className="w-[80%] mx-auto">
+      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 gap-6">
+        {category.skills.map((skill, idx) => (
+          <SkillItem key={idx} skill={skill} />
+        ))}
+      </div>
     </div>
   </div>
 );

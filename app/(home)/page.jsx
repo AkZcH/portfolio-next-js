@@ -7,7 +7,7 @@ import ExperienceSection from './components/Experience'
 // import ResearchSection from './components/ResearchSection'
 // import ExplorationSection from './components/ExplorationSection'
 // import MetricsSection from './components/MetricsSection'
-import AboutSection from './components/AboutSection'
+// import AboutSection from './components/AboutSection'
 // import CoreSignalsSection from './components/CoreSignalsSection'
 import ProjectsSection from './components/ProjectsSection'
 import Link from 'next/link'
@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <div>
       <HeroSection />
-      <AboutSection />
+      {/* <AboutSection /> */}
       {/* <CoreSignalsSection /> */}
       <ProjectsSection />
       {/*<ResearchSection /> */}

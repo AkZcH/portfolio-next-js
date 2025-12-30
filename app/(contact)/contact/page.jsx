@@ -43,10 +43,10 @@ const ContactPage = () => {
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary">
                         Get In Touch
                     </h2>
-                    <p className="text-muted-foreground max-w-xl mx-auto text-sm sm:text-base px-4">
+                    {/* <p className="text-muted-foreground max-w-xl mx-auto text-sm sm:text-base px-4">
                         Interested in cryptography research collaboration? Have questions about post-quantum security? 
                         Let's discuss secure systems and cutting-edge cryptographic solutions.
-                    </p>
+                    </p> */}
                 </motion.div>
 
                 <div className="w-full max-w-6xl flex flex-col lg:flex-row gap-6 sm:gap-8 items-start">

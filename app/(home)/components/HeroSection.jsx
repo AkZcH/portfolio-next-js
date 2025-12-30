@@ -97,7 +97,7 @@ export default function HeroSection() {
 
   {/* X */}
   <a
-    href="https://x.com/"
+    href="https://x.com/akshatcore"
     target="_blank"
     rel="noopener noreferrer"
     aria-label="X"
@@ -109,6 +109,28 @@ export default function HeroSection() {
       viewBox="0 0 24 24"
     >
       <path d="M18.244 2H21.552L14.33 10.292L22.827 22H16.172L10.964 14.882L4.769 22H1.46L9.167 13.143L1.013 2H7.839L12.552 8.347L18.244 2ZM17.083 20H18.916L6.837 4H4.869L17.083 20Z" />
+    </svg>
+  </a>
+
+  {/* Email */}
+  <a
+    href="mailto:contact@akshatchauhan.dev"
+    aria-label="Email"
+    className="group transition-transform duration-200 hover:scale-110 hover:-translate-y-0.5"
+  >
+    <svg
+      className="w-5 h-5 text-[#e24a4a] transition-colors duration-200 group-hover:text-white"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+      ></path>
     </svg>
   </a>
 
@@ -156,16 +178,16 @@ export default function HeroSection() {
 
                         <div className="flex gap-4 pt-4">
               <Link
-                href="/contact"
+                href="/projects"
                 className="px-5 py-2 rounded-md bg-[#e24a4a] text-black font-medium hover:bg-[#d44141] transition"
               >
-                Get in Touch
+                View Projects
               </Link>
               <Link
-                href="/projects"
+                href="/contact"
                 className="px-5 py-2 rounded-md border border-zinc-700 text-zinc-300 hover:border-zinc-500 transition"
               >
-                View Projects
+                Get in Touch
               </Link>
             </div>
             

@@ -74,7 +74,7 @@ const Logo = ({ isMobile = false }) => (
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.2 }}
             >
-                <span className="hidden sm:inline">{config.developer.name} | Backend Systems</span>
+                <span className="hidden sm:inline">{config.developer.name}</span>
                 <span className="sm:hidden">{config.developer.name}</span>
             </motion.span>
         </Link>
