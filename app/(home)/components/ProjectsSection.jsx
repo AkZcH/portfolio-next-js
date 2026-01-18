@@ -8,15 +8,7 @@ import { config } from '@/config';
 
 const ProjectCard = ({ project, index }) => {
   const getTitleColor = (id) => {
-    const colors = [
-      "text-blue-400",
-      "text-green-400",
-      "text-purple-400",
-      "text-orange-400",
-      "text-red-400",
-      "text-cyan-400"
-    ];
-    return colors[(id - 1) % colors.length];
+    return "text-[#e24a4a]";
   };
 
   return (
@@ -26,7 +18,7 @@ const ProjectCard = ({ project, index }) => {
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
     >
-      <Card className="p-6 h-full bg-gradient-to-br from-primary/5 to-secondary/5 border-primary/20 hover:border-primary/30 transition-colors">
+      <Card className="p-6 h-full bg-gradient-to-br from-primary/5 to-secondary/5 border-primary/20 hover:border-primary/30 transition-all duration-300 hover:scale-105 hover:-translate-y-2 hover:shadow-lg hover:shadow-[#e24a4a]/20">
         <div className="flex items-center justify-between mb-4">
           <Badge variant="secondary" className="text-xs">
             {project.technologies[0]}

@@ -122,7 +122,7 @@ const socialCards = [
     icon: "/icons/linkedin.webp",
     link: "https://linkedin.com/in/akshat-chauhan-ai",
     ariaLabel: "View LinkedIn profile",
-    handle: "akshat-chauhan-ai",
+    handle: "Akshat .",
   },
   {
     title: "Spotify",
@@ -133,6 +133,16 @@ const socialCards = [
     link: "https://open.spotify.com/user/akzcH",
     ariaLabel: "View Spotify profile",
     handle: "akzcH",
+  },
+    {
+    title: "Medium",
+    headline: "Technical Writing & Thinking",
+    body: "Stories of concepts and engineering insights written honestly.",
+    cta: "Read articles",
+    icon: "/icons/medium.png",
+    link: "https://medium.com/@akzcH",
+    ariaLabel: "View Medium profile",
+    handle: "@akzcH",
   },
 ];
 
@@ -159,8 +169,8 @@ const communityCards = [
   },
   {
     title: "Medium",
-    headline: "Technical Writing & Thinking",
-    body: "Stories of concepts and engineering insights written honestly.",
+    headline: "My Thoughts",
+    body: "How I started programming",
     cta: "Read articles",
     icon: "/icons/medium.png",
     link: "https://medium.com/@akzcH",
